@@ -1,0 +1,44 @@
+
+      <body>
+    <h2 id="a">Appointments List!!</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Appointment Date</th>
+                <th>Appointment Time</th>
+                <th>Doctor Name</th>
+                <th>Description</th>
+                <th>Check up</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointment">
+                <td>{{appointment.patientname}}</td>
+                <td>{{appointment.appointmentDate}}</td>
+                <td>{{appointment.appointmentTime}}</td>
+                <td>{{appointment.doctorname}}</td>
+                <td>{{appointment.description}}</td>
+                <td>{{appointment.checkup}}</td>
+                <td>
+                    <button (click)="updateAppointment(appointment.id)" class="btn btn-info">Check Up</button>
+                    <button (click)="deleteAppointment(appointment.id)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    </body>
+    <footer class="footer">
+        <nav>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+          <p>&copy; 2023 HOSPITAL. All rights reserved.</p>
+        <div class="container"></div>
+        <span>All Right Reserved @2023 Copyrights</span>
+      </footer>

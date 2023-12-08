@@ -1,0 +1,26 @@
+<header ngIf="showNavbar">
+    <div class="logo">
+      <img src="https://t3.ftcdn.net/jpg/05/14/36/48/360_F_514364850_xLOQX6SOY2qcjAIcTowsi3xYvHmhmvs0.jpg" alt="Hospital Logo">
+    </div>
+    <nav >
+      <ul>
+        <li><a routerLink="Home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="aboutus" routerLinkActive="active">About Us</a></li>
+        <li><a routerLink="Doctor" routerLinkActive="active">Doctors</a></li>
+        <li><a routerLink="Nurse" routerLinkActive="active">Nurses</a></li>
+        <li><a routerLink="Patient" routerLinkActive="active">Patients</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<footer  ngIf="showNavbar">
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 WELLNESS HOSPITAL. All rights reserved.</p>
+  </footer>

@@ -1,0 +1,105 @@
+
+
+
+
+<body>
+    <div class="container">
+      <br>
+      <br>
+  
+      <mat-card class="example-card-header mb-2">
+       
+        <p class="header-card-text">Add Doctor</p>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <div class="row">
+            <form [formGroup]="doctorForm">
+  
+              <div class="row">
+                <label class="col-2 label">Doctor Fisrt Name</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Doctor First Name</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="firstname">
+                </mat-form-field>
+
+                <label class="col-2 label">Doctor Last Name</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Doctor Last Name</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="lastname">
+                </mat-form-field>
+
+
+  
+                <label class="col-md-2 label">Speciliazation</label>
+                <mat-form-field class="col-md-3" appearance="outline">
+                  <mat-label>Select</mat-label>
+                  <mat-select formControlName="speciliazation" ngDefaultControl>
+                    <div>
+                      <mat-option value="Neurology">Neurology</mat-option>
+                      <mat-option value="Cardiology">Cardiology</mat-option>
+                      <mat-option value="Gastroenterology">Gastroenterology</mat-option>
+                      <mat-option value="Orthopaedic">Orthopaedic</mat-option>
+                      <mat-option value="Gynecology">Gynecology</mat-option>
+                      <mat-option value="Radiology">Radiology</mat-option>
+                    </div>
+                  </mat-select>
+                </mat-form-field>
+  
+                <label class="col-md-3 label">Location</label>
+                <mat-form-field class="col-md-4" appearance="outline">
+                  <mat-label><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem;"> </i>Place
+                  </mat-label>
+                  <mat-select formControlName="location" ngDefaultControl>
+
+                    <mat-option value="Andhra Pradesh">Andhra Pradesh</mat-option>
+                    <mat-option value="Assam">Assam</mat-option>
+                    <mat-option value="Arunachal Pradesh">Arunachal Pradesh</mat-option>
+                    <mat-option value="Bihar">Bihar</mat-option>
+                    <mat-option value="Chhattisgarh">Chhattisgarh</mat-option>
+                    <mat-option value="Goa">Goa</mat-option>
+                    <mat-option value="Gujarat">Gujarat</mat-option>
+                    <mat-option value="Haryana">Haryana</mat-option>
+                    <mat-option value="Himachal Pradesh">Himachal Pradesh</mat-option>
+                    <mat-option value="Jharkhand">Jharkhand</mat-option>
+                    <mat-option value="Karnataka">Karnataka</mat-option>
+                    <mat-option value="Kerala">Kerala</mat-option>
+                    <mat-option value="Madhya Pradesh">Madhya Pradesh</mat-option>
+                    <mat-option value="Maharashtra">Maharashtra</mat-option>
+                    <mat-option value="Manipur">Manipur</mat-option>
+                    <mat-option value="Meghalaya">Meghalaya</mat-option>
+                    <mat-option value="Nagaland">TamilNadu</mat-option>
+                    <mat-option value="Odisha">Odisha</mat-option>
+                  </mat-select>
+                </mat-form-field>
+  
+                <label class="col-md-2 label">Description</label>
+                <mat-form-field class="col-md-10" appearance="outline">
+                  <textarea formControlName="description" matInput></textarea>
+                </mat-form-field>
+  
+  
+                <label class="col-2 label">LicenseNumber</label>
+                <mat-form-field class="col-3" appearance="outline">
+                  <mat-label>LicenseNumber</mat-label>
+                  <input formControlName="licenseNumber" matInput placeholder="Placeholder">
+                </mat-form-field>
+                <label class="col-2 label">Experience</label>
+                <mat-form-field class="col-3" appearance="outline">
+                  <mat-label>Experience</mat-label>
+                  <input formControlName="experience" matInput placeholder="Placeholder">
+                </mat-form-field>
+              </div>
+            </form>
+          </div>
+        </mat-card-content>
+      </mat-card>
+  
+      <div class="button">
+        <button class="btn" (click)="onSubmit()" mat-raised-button style="background: #43db52">
+          Add Doctor
+        </button>
+      </div>
+    </div>
+  
+  </body>

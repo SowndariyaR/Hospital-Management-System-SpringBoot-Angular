@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3">
+    <h3>update Learner!!!</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" class="form-control" id="firstname" [(ngModel)]="doctor.firstname" name="firstname">
+        </div>
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" id="lastname" [(ngModel)]="doctor.lastname" name="lastname">
+        </div>
+        <div class="form-group">
+            <label>LicenseNumber</label>
+            <input type="text" class="form-control" id="licenseNumber" [(ngModel)]="doctor.licenseNumber" name="licenseNumber">
+        </div>
+        <div class="form-group">
+            <label>Speciliazation</label>
+            <input type="text" class="form-control" id="speciliazation" [(ngModel)]="doctor.speciliazation" name="speciliazation">
+        </div>
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" class="form-control" id="location" [(ngModel)]="doctor.location" name="location">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="doctor.description" name="description">
+        </div>
+        <div class="form-group">
+            <label>Experience</label>
+            <input type="text" class="form-control" id="experience" [(ngModel)]="doctor.experience" name="experience">
+        </div>
+        <div>
+            <button class="btn btn-success" type="submit">Update</button>
+        </div>
+    </form>
+</div>

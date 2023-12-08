@@ -1,0 +1,77 @@
+
+
+
+
+<body>
+    <div class="container">
+      <br>
+      <br>
+  
+      <mat-card class="example-card-header mb-2">
+       
+        <p class="header-card-text">Book Appointment</p>
+      </mat-card>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <div class="row">
+            <form [formGroup]="appointmentForm">
+  
+              <div class="row">
+                <label class="col-2 label">Patient Name</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Patient Name</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="patientname">
+                </mat-form-field>
+
+                <label class="col-2 label">Appointment Date</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Appointment Date</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="appointmentDate">
+                </mat-form-field>
+
+                <label class="col-2 label">Appointment Time</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Appointment Time</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="appointmentTime">
+                </mat-form-field>
+
+
+  
+                
+  
+               
+  
+                <label class="col-md-2 label">Disease</label>
+                <mat-form-field class="col-md-10" appearance="outline">
+                  <textarea formControlName="description" matInput></textarea>
+                </mat-form-field>
+
+                <label class="col-md-2 label">Doctor Name</label>
+                <mat-form-field class="col-md-3" appearance="outline">
+                  <mat-label>Select</mat-label>
+                  <mat-select formControlName="doctorname" ngDefaultControl>
+                    <div>
+                      <mat-option value="Dr.Dharwesh">Dr.Dharwesh</mat-option>
+                      <mat-option value="Dr.Disha">Dr.Disha</mat-option>
+                      <mat-option value="Dr.Gayathri">Dr.Gayathri</mat-option>
+                      <mat-option value="Dr.Niffas">Dr.Niffas</mat-option>
+                      <mat-option value="Dr.Afthaf">Dr.Afthaf</mat-option>
+                      <mat-option value="Dr.Fayaz">Dr.Fayaz</mat-option>
+                    </div>
+                  </mat-select>
+                </mat-form-field>
+  
+              </div>
+            </form>
+          </div>
+        </mat-card-content>
+      </mat-card>
+  
+      <div class="button">
+        <button class="btn" (click)="onSubmit()" mat-raised-button style="background: #43db52">
+          Book
+        </button>
+      </div>
+    </div>
+  
+  </body>

@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+</head>
+<body>
+  
+  <header>
+    <div class="logo">
+      <img src="https://png.pngtree.com/element_our/20200702/ourmid/pngtree-hospital-logo-pictures-image_2289643.jpg" alt="Hospital Logo">
+    </div>
+    <nav >
+      <ul>
+        <li><a routerLink="Home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="aboutus" routerLinkActive="active">About Us</a></li>
+        <li><a routerLink="Doctor" routerLinkActive="active">Doctors</a></li>
+        <li><a routerLink="Nurse" routerLinkActive="active">Nurses</a></li>
+        <li><a href="#">Log-out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>HELLO {{ userName }} WELCOME TO WELLNESS HOSPITAL</h1>
+      <p>"YOUR WELLNESS,OUR MISSION"</p>
+      <a routerLink="appointment" routerLinkActive="active" class="cta-button">Book an Appointment</a>
+    </div>
+  </section>
+
+    <div class="doctorimage">
+      <img src="https://media.istockphoto.com/id/1161346629/photo/happy-smiling-doctor-with-thumbs-up-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=vbQQTZvEinXl8K2tq1rz5WDnQ-_BvXPzSAfMVCFh_E0=" class="img-rounded"  height="450px" width="auto">
+    </div>
+  
+    <div class="servicehead">
+      <h2> Explore our Centres of Clinical Excellence</h2>
+    </div>
+  <section class="servicestiles">
+    
+    <div class="table-container">
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://gleneagles.com.my/ResourcePackages/Gleneagles/assets/dist/images/medical-specialty/cardiology/cardiology-heart-diagram.png" alt="Image 1">
+          <div class="name">Cardiology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://spneuro.com/wp-content/uploads/2022/02/600-neurology.jpg" alt="Image 2">
+          <div class="name">neurology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://polarishospitals.com/wp-content/uploads/elementor/thumbs/Polaris-Gastroenterology-p4z7dmkisf07rf49hnd04begy3bzdavsv7aihrdv1s.jpg" alt="Image 3">
+          <div class="name">gastroenterology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://productimages.withfloats.com/serviceimages/tile/63063628b71064b2ef108389orthopaedic-surgery" alt="Image 4">
+          <div class="name">orthopaedic</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://www.psghospitals.com/wp-content/uploads/2022/08/oncology-banner.jpg" alt="Image 5">
+          <div class="name">oncology</div>
+        </div>
+      </div>
+        <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://productimages.withfloats.com/serviceimages/tile/63062af99515d7455f2316acobgyn_1920x1080" alt="Image 5">
+          <div class="name">gynecology</div>
+        </div>
+      </div>
+          <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy8XIUMW7XrgUzKe-5GPjioav9z1P4s0PJKw&usqp=CAU" alt="Image 5">
+          <div class="name">dermatology</div>
+
+        </div>
+      </div>
+            <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://images.ctfassets.net/u4vv676b8z52/14hAJjAleHpWEpthC78g53/8cd297277fe873fb61ce26ed175f5e2c/ophthalmic-hero.gif?fm=jpg&q=80" alt="Image 5">
+          <div class="name">ophthalmology</div>
+        </div>
+      </div>
+              <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://cdn.castleconnolly.com/dims4/default/e0b7b51/2147483647/strip/true/crop/1000x563+0+0/resize/840x473!/quality/90/?url=http%3A%2F%2Fcastle-connolly-brightspot.s3.us-east-1.amazonaws.com%2Fb9%2F4d%2F8fd1ac674c38ad6d6d2fa19d4d0b%2Fpillar-pediatric-urology-52-1200x675.jpg" alt="Image 5">
+          <div class="name">paediatricurology</div>
+        </div>
+      </div>
+                <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/picture/2018/6/shutterstock_441984037.jpg" alt="Image 5">
+          <div class="name">endocrinology</div>
+
+        </div>
+      </div>
+                  <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://vishwarajhospital.com/wp-content/uploads/2023/07/urology.jpg" alt="Image 5">
+          <div class="name">urology</div>
+        </div>
+      </div>
+                    <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://hinduja-prod-assets.s3.ap-south-1.amazonaws.com/2022-03/Nephrology.png?VersionId=ROUncR4cxzh__Z4aeHrQHLR4iyZlRX3I" alt="Image 5">
+          <div class="name">nephrology</div>
+        </div>
+      </div>
+                      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://arcaclinic.com/wp-content/uploads/2023/02/Pulmonology_Banner1.png" alt="Image 5">
+          <div class="name">pulmonology</div>
+   
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://travelhealthpro.org.uk/media_lib/mlib-uploads/full/pain-in-joints.jpeg" alt="Image 5">
+          <div class="name">rheumatology</div>
+        </div>
+      </div>
+       <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://www.herzing.edu/sites/default/files/styles/fp_960_640/public/2020-09/radiology_tech.jpg.webp?itok=Q03rEAHu" alt="Image 5">
+          <div class="name">radiology</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="cell-content">
+          <img class="image" src="https://www.mayraskinclinic.com/wp-content/uploads/2020/02/plastic-surgery-1.png" alt="Image 5">
+          <div class="name">plasticsurgery</div>
+        </div>
+      </div>
+      <!-- Repeat the above cell structure for additional tiles -->
+    </div>
+  </section>
+
+  <section class="doctors">
+    <h2>Our Doctors</h2>
+    <ul>
+      <li>
+        <img src="https://uhpcindia.com/wp-content/uploads/2021/04/Dr-Satish-Jain-1.jpg" alt="Doctor">
+        <br>
+        <h3>Dr. Satish Jain</h3>
+        <p>Cardiology</p>
+        <p>MD, PhD</p>
+        <a href="#">View Profile</a>
+      </li>
+      <li>
+        <img src="https://nitte.edu.in/admin/photo/1/faculty/21/371.jpg" alt="Doctor">
+        <br>
+        <h3>Dr. Kavya Rathi</h3>
+        <p>Orthopedics</p>
+        <p>MD</p>
+        <a href="#">View Profile</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>Patient Testimonials</h2>
+    <div class="testimonial">
+      <img src="https://res.akamaized.net/domain/image/upload/t_web/v1545262412/Pat-Cummins---resized-image_c7cc2k.jpg" alt="Patient">
+      <blockquote>
+        <p>"I had a great experience at the hospital. The doctors and staff were amazing!"</p>
+        <cite>- Ravi Gupta</cite>
+      </blockquote>
+    </div>
+    <div class="testimonial">
+      <img src="https://media.gq.com/photos/59b0710b8056576ed6f1d2c8/4:3/w_3955,h_2966,c_limit/Travis-Kelce-GQ0635_cc-lede.jpg" alt="Patient">
+      <blockquote>
+        <p>"The care I received was exceptional. I highly recommend this hospital."</p>
+        <cite>- Nidhi Chawala</cite>
+      </blockquote>
+    </div>
+  </section>
+
+    <section class="contact">
+    <h2>Contact Us</h2>
+    <p>123 Hospital Street, City, Country</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Email: info@hospital.com</p>
+    <h2>MAP</h2>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30263.284210191352!2d73.84229954999999!3d18.532944999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0791d785177%3A0x20d86a81ca743dc8!2sShivajinagar%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1689098119375!5m2!1sen!2sin"></iframe>
+    </div>
+    <div class="social-media">
+      <h2>Social Media</h2>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook"></a>
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/292px-Logo_of_Twitter.svg.png" alt="Twitter"></a>
+      <a href="#"><img src="https://thumbs.dreamstime.com/b/insta-new-155631943.jpg" alt="Instagram"></a>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 WELLNESS HOSPITAL. All rights reserved.</p>
+  </footer>
+</body>
+</html> 
